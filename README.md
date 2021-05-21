@@ -12,9 +12,9 @@ sudo ./install.pl
 ~~~
 ### Usage
 * `-S`: install a package
-* `-U`: install a local `.rpm`
+* `-U`: install a local `.rpm` package
 * `-Rs`: remove a package
-* `-Rns`: remove a package (same as -Rs)
+* `-Rns`: remove a package (same as `-Rs`)
 * `-Syu`: perform a system upgrade
 * `-Syuu`: perform a distribution upgrade
 * `-Ss`: search for a package via regex
