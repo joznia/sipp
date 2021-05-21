@@ -1,9 +1,11 @@
 #!/usr/bin/env perl
 
+# sipp installer
+
 use File::Copy;
 
 $src = "./main.pl";
-$dest = "/usr/bin/yummi";
+$dest = "/usr/bin/sipp";
 $destp = "/usr/bin/pacman";
 
 sub base {

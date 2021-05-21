@@ -1,13 +1,12 @@
-# yummi
-## dnf/rpm wrapper written in Perl and with a pacman syntax
+# sipp
+## zypper/rpm wrapper written in Perl and with a pacman syntax
 ### Installation
 `install.pl` arguments:
-* `-u`: uninstall yummi
-* `-s`: install as usual, but also symlink `/usr/bin/yummi` to `/usr/bin/pacman`
+* `-u`: uninstall sipp
+* `-s`: install as usual, but also symlink `/usr/bin/sipp` to `/usr/bin/pacman`
 ~~~
-sudo dnf -y install perl-File-Copy
-git clone https://github.com/joznia/yummi.git
-cd yummi
+git clone https://github.com/joznia/sipp.git
+cd sipp
 chmod +x install.pl
 sudo ./install.pl
 ~~~
@@ -16,8 +15,6 @@ sudo ./install.pl
 * `-U`: install a local `.rpm`
 * `-Rs`: remove a package
 * `-Rns`: remove a package (same as -Rs)
-* `-Rsc`: remove a package and remove orphans
-* `-Sy`: sync the repositories
 * `-Syu`: perform a system upgrade
 * `-Syuu`: perform a distribution upgrade
 * `-Ss`: search for a package via regex
@@ -25,17 +22,11 @@ sudo ./install.pl
 * `-Qi`: display installed package information
 * `-Si`: display remote package information
 * `-Ql`: display files provided by an installed package
-* `-Fl`: display files provided by a remote package
 * `-Qo`: find which package provides which file
 * `-Qc`: show the changelog of a package
 * `-Qu`: list packages which are upgradable
-* `-Sc`: remove now-undownloadable packages from the local package cache
-* `-Scc`: remove all downloaded packages from the local package cache
-* `-Qtdq`: remove orphan packages
-* `-c`: remove orphan packages (same as -Qtdq)
-* `-De`: mark an automatically installed package as manually installed
-* `-Dd`: mark a manually installed package as automatic
+* `-Sc`: remove packages from the local package cache
+* `-D`: mark an automatically installed package as manually installed
 * `-Sw`: download a package without installing it
-* `-Qmq`: remove packages not included in any repositories 
-
-
+ 
+ 
