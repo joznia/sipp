@@ -10,7 +10,7 @@ This is free software licensed under the GNU GPL v3.
 =cut
 
 $help = <<"EOF";
-space: --help
+sipp: --help
 -S     : install a package
 -U     : install a local .rpm
 -Rs    : remove a package
