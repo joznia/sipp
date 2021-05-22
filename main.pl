@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 =begin
-Welcome to sipp.
+Welcome to syppy.
 
 This is a zypper/rpm wrapper written in Perl and aims to have a syntax similar to Arch's 'pacman'.
 
@@ -10,7 +10,7 @@ This is free software licensed under the GNU GPL v3.
 =cut
 
 $help = <<"EOF";
-sipp: --help
+syppy: --help
 -S     : install a package
 -U     : install a local .rpm
 -Rs    : remove a package

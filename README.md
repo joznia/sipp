@@ -1,12 +1,12 @@
-# sipp
+# syppy
 ## zypper/rpm wrapper written in Perl and with a pacman syntax
 ### Installation
 `install.pl` arguments:
-* `-u`: uninstall sipp
-* `-s`: install as usual, but also symlink `/usr/bin/sipp` to `/usr/bin/pacman`
+* `-u`: uninstall syppy
+* `-s`: install as usual, but also symlink `/usr/bin/syppy` to `/usr/bin/pacman`
 ~~~
-git clone https://github.com/joznia/sipp.git
-cd sipp
+git clone https://github.com/joznia/syppy.git
+cd syppy
 chmod +x install.pl
 sudo ./install.pl
 ~~~

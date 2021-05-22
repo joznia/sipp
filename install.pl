@@ -1,11 +1,11 @@
 #!/usr/bin/env perl
 
-# sipp installer
+# syppy installer
 
 use File::Copy;
 
 $src = "./main.pl";
-$dest = "/usr/bin/sipp";
+$dest = "/usr/bin/syppy";
 $destp = "/usr/bin/pacman";
 
 sub base {
