@@ -196,10 +196,10 @@ sub Sc {
     system $cmd;
 }
 
-# -Qtdq # not currently working
+# -Qtdq # very primitive, not working very well
 sub Qtdq {
     checksu '-Qtdq';
-    my $cmd = "zypper autoremove";
+    my $cmd = "zypper rm \$(zypper pa --unneeded | awk '!/Version/ { print \$7 }')"; # blasphemous i know
     system $cmd;
 }
 
