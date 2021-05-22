@@ -12,15 +12,16 @@ sudo ./install.pl
 ~~~
 ### Usage
 * `-S`: install a package
-* `-U`: install a local `.rpm` package
+* `-Sr`: reinstall a package
+* `-U`: install a local package in RPM format
 * `-Rs`: remove a package
-* `-Rns`: remove a package (same as `-Rs`)
 * `-Syu`: perform a system upgrade
 * `-Syuu`: perform a distribution upgrade
 * `-Ss`: search for a package via regex
 * `-Q`: search for a locally installed package
 * `-Qi`: display installed package information
 * `-Si`: display remote package information
+* `-Sii`: show reverse dependencies 
 * `-Ql`: display files provided by an installed package
 * `-Qo`: find which package provides which file
 * `-Qc`: show the changelog of a package
@@ -28,5 +29,10 @@ sudo ./install.pl
 * `-Sc`: remove packages from the local package cache
 * `-D`: mark an automatically installed package as manually installed
 * `-Sw`: download a package without installing it
- 
- 
+* `-Qpl`: list the contents of a local RPM
+* `-Sp`: install a sourcepackage
+* `-Sd`: install the build dependencies of a sourcepackage
+* `-Qk`: verify a package
+* `-Qkk`: verify all packages
+* `-Dk`: verify dependencies of the system
+
