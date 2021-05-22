@@ -132,7 +132,7 @@ sub Qi {
 # -Si
 sub Si {
     checkargs;
-    my $cmd = "zypper info $after";
+    my $cmd = "zypper if $after";
     system $cmd;
 }
 
@@ -169,7 +169,7 @@ sub Qu {
 # -Sc
 sub Sc {
     checksu '-Sc';
-    my $cmd = "zypper clean";
+    my $cmd = "zypper cc";
     system $cmd;
 }
 
