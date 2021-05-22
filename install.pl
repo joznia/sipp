@@ -1,11 +1,11 @@
 #!/usr/bin/env perl
 
-# syppy installer
+# zpw installer
 
 use File::Copy;
 
 $src = "./main.pl";
-$dest = "/usr/bin/syppy";
+$dest = "/usr/bin/zpw";
 $destp = "/usr/bin/pacman";
 
 sub base {
@@ -20,7 +20,7 @@ if ($a eq '-u') {
     }
 } elsif ($a eq '-s') {
     base;
-    symlink $dest, $destp;
+    system "ln -sf $dest $destp";
     chmod 0755, $destp;
 } else {
     base;
