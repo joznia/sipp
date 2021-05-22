@@ -41,7 +41,7 @@ $after = join " ", @ARGV;
 sub checksu {
     my $thisf = (caller(0)) [3];
     if ($> ne 0) {
-        die "arg '$_[0]' requires root \n"
+        die "option '$_[0]' requires root \n"
     }
 }
 
